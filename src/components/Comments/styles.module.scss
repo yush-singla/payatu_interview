@@ -1,0 +1,39 @@
+.comment {
+  padding: 25px;
+  position: relative;
+  &_vertical_line {
+    height: 100%;
+    width: 5px;
+    background-color: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    &:hover {
+      cursor: pointer;
+      background-color: blue;
+    }
+  }
+  &_replies {
+    position: relative;
+  }
+
+  &_header {
+    display: flex;
+    gap: 20px;
+    &_collapse {
+      background: transparent;
+      border: 1px;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        svg {
+          stroke: blue;
+        }
+      }
+    }
+  }
+  &_text {
+    padding: 10px 30px;
+  }
+}
